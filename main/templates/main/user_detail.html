@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        {% block content %}
+            <div class="users-block">
+                <div class="users-block-photo">
+                    <img src="{{ user.photo_400 }}" alt="">
+                </div>
+                <div class="users-block-name">
+                    <span>{{ user.last_name }}</span>
+                    <span>{{ user.first_name }}</span>
+                </div>
+            </div>
+            <div class="friends-block">
+                {% for friend in friends %}
+                    <div class="friends-block-item">
+                        <img src="{{ friend.photo_100 }}" alt="">
+                        <p>{{ friend.last_name }}</p>
+                        <p>{{ friend.first_name }}</p>
+
+                    </div>
+                {% endfor %}
+            </div>
+        {% endblock %}
+
+
+        <div class="logout">
+            <a href="{% url 'log_out_url' %}">Выйти</a>
+        </div>
+    </div>
+</body>
+</html>

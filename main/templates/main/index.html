@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <div class="wrapper">
+            <div class="empty_block"></div>
+            <div class="button">
+                <!-- TODO Подставить client_id из своего приложения VK -->
+
+                <a href="https://oauth.vk.com/authorize?client_id=******&display=page&redirect_uri=http://127.0.0.1:8000/social/user_detail/&scope=friends&response_type=code&v=5.101">Авторизоваться</a>
+            </div>
+    </div>
+</body>
+</html>

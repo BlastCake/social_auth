@@ -1,0 +1,89 @@
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.empty_block {
+    height: 35vh;
+}
+
+.wrapper {
+    width: 800px;
+    margin: auto;
+}
+
+.users-block {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.users-block-name {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+}
+
+.users-block-name span {
+    margin: 0 20px;
+    font-size: 30px;
+
+}
+
+.users-block-photo {
+    display: flex;
+    justify-content: center;
+
+}
+
+.friends-block {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.friends-block-item {
+    text-align: center;
+}
+
+.friends-block-item img {
+    border-radius: 100px;
+}
+
+.logout {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.logout a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px 20px;
+    color: black;
+}
